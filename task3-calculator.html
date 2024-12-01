@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    </head>
+    <body>
+
+        <div class="header">
+            <h2>CALCULATOR</h2>
+        </div>
+        <div class="calculator">
+            <input type="text" class="display" id="display" disabled value="0">
+            <div class="buttons">
+                <button onclick="clearDisplay()" class="clear">C</button>
+                <button onclick="appendInput('/')" class="buttondivide">/</button>
+                <button onclick="appendInput('*')" class="buttonmul">*</button>
+                <button onclick="appendInput('-')" class="buttonmin">-</button>
+    
+                <button onclick="appendInput('7')" class="button7">7</button>
+                <button onclick="appendInput('8')" class="button8">8</button>
+                <button onclick="appendInput('9')" class="button9">9</button>
+                <button onclick="appendInput('+')" class="button+">+</button>
+    
+                <button onclick="appendInput('4')" class="button4">4</button>
+                <button onclick="appendInput('5')" class="button5">5</button>
+                <button onclick="appendInput('6')" class="button6">6</button>
+                <button onclick="appendInput('.')" class="operator">.</button>
+    
+                <button onclick="appendInput('1')">1</button>
+                <button onclick="appendInput('2')">2</button>
+                <button onclick="appendInput('3')">3</button>
+                <button onclick="appendInput('0')">0</button>            
+    
+                <button onclick="calculateResult()" class="equals">=</button>
+            </div>
+        </div>
+    </body>
+</html>
